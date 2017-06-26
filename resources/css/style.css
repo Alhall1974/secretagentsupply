@@ -97,14 +97,14 @@ li {
   margin-top: 3rem;
   display: flex;
   border: 1px solid red;
+  justify-content: space-between;
 }
 
 
 .categories p {
   text-align: center;
   background-color: black;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding: 0.5rem 0rem;
   width: 100%;
   border: 1px solid red;
   align-self: flex-end;
@@ -113,6 +113,15 @@ li {
 
 }
 
+.cat-img {
+  display: flex;
+  height: 9rem;
+  padding: 2rem;
+  border: 4px solid black;
+  align-items: center;
+  justify-content: center;
+
+}
 
 .pen {
   background-image: url('../images/pen.png');
@@ -120,10 +129,6 @@ li {
   background-position: center;
   background-size: 9rem;
   width: 30%;
-  height: 9rem;
-  padding: 2rem;
-  border: 4px solid black;
-
 }
 
 .watches {
@@ -132,10 +137,7 @@ li {
   background-position: center;
   background-size: 9rem;
   width: 30%;
-  height: 9rem;
-  padding: 2rem;
-  border: 4px solid black;
-
+  margin-top: 2rem;
 }
 
 .glasses {
@@ -144,10 +146,6 @@ li {
   background-position: center;
   background-size: 9rem;
   width: 30%;
-  height: 9rem;
-  padding: 2rem;
-  border: 4px solid black;
-
 }
 
 .location-hours {
@@ -212,17 +210,17 @@ footer {
   }
 }
 
-@media only screen and (max-width: 580px) <!-- for debugging. reduce to 470px later--> {
+@media only screen and (max-width: 580px) {
 
-  .headline h4 { <!-- working>
+  .headline h4 { <!-- not working>
     font-size: 0.77rem;
   }
 
-  .headline h1 {  <!-- working>
+  .headline h1 {  <!-- not working>
     font-size: 1rem;
   }
 
-  .headline { <!-- working>
+  .headline { <!-- not working>
     padding: 1rem 2rem;
     margin-top: 10rem;
     position: relative;
@@ -239,8 +237,8 @@ footer {
     width: 90%; <!-- not working -->
   }
 
-.copyright { <!-- not working!!! -->
+  .copyright { <!-- not working!!! -->
   display: block;
   text-align: center;
 }
-}
+  }
