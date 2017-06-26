@@ -18,7 +18,7 @@ body {
   width: 960px;
 
 }
-.logo .container {
+.logo  {
   border: 1px solid red; <!-- for debuggng-->
   margin: auto;
   display: block;
@@ -60,6 +60,8 @@ body {
   margin-top: 2rem;
   padding-bottom: 0.25rem;
   padding-left: 3rem;
+  padding-top: 2rem; <!-- why won't this work?-->
+
 }
 
 .new-arrival h1 {
@@ -67,7 +69,8 @@ body {
   font-weight: bold;
   padding-left: 3rem;
   flex-wrap: wrap;
-  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  padding-top: 0.25rem;
 }
 
 .nav-container {
