@@ -15,11 +15,9 @@ body {
 .container {
   margin: auto;
   width: 960px;
-  border: 1px solid black;
 
 }
 .logo  {
-  border: 1px solid red; <!-- for debuggng-->
   display: block;
   flex-direction: row;
   align-items: flex-start;
@@ -48,7 +46,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   height: 25rem;
-  border: 1px solid red; <!-- for debuggng-->
 }
 
 .headline {
@@ -56,6 +53,7 @@ body {
   background-color: black;
   padding: 2rem 3rem;
   margin-top: 9rem;
+  position: relative;
 }
 
 .headline h4 {
@@ -79,7 +77,6 @@ body {
 .menu {
   width: auto;
   color: white;
-  border: 1px solid black; <!-- for debuggng-->
 }
 
 nav ul {
@@ -93,32 +90,35 @@ li {
 
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-  border: 1px solid black;
-
 }
 
 
 .categories {
   margin-top: 3rem;
   display: flex;
-
+  border: 1px solid red;
+  flex-wrap: wrap;
 }
 
 .categories p {
   text-align: center;
-  align-items: flex-end;
   background-color: black;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  width: 100%;
   border: 1px solid red;
+  align-self: flex-end;
+  margin-top: 2rem;
+
 
 }
+
 
 .pen {
   background-image: url('../images/pen.png');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: 9rem;
   width: 30%;
   height: 9rem;
   padding: 2rem;
@@ -130,7 +130,7 @@ li {
   background-image: url('../images/watch.png');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: 9rem;
   width: 30%;
   height: 9rem;
   padding: 2rem;
@@ -142,7 +142,7 @@ li {
   background-image: url('../images/glasses.png');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: 9rem;
   width: 30%;
   height: 9rem;
   padding: 2rem;
@@ -180,17 +180,17 @@ li {
 footer {
   background-color: black;
   height: 5rem;
-
+  text-align: left;
 }
 
 .copyright {
   margin-top: 2rem;
-<!-- not working -->
-
 }
 
-footer p {
-  text-align: left;
-
-
+@media only screen (max-width: 1024px) {
+  .glasses,
+  .watches,
+  .pen {
+    width: 47%;
+  }
 }
