@@ -7,22 +7,23 @@ body {
   color: white;
 }
 
+.container {
+  margin: auto;
+  max-width: 960px;
+}
+
 .flex {
   display: flex;
+  flex-direction: row;
   align-items: center;
 }
 
-.container {
-  margin: auto;
-  width: 960px;
 
-}
-.logo  {
-  display: block;
-  flex-direction: row;
-  align-items: flex-start;
+
+
+.logo {
+  width: 100%;
   background-color: black;
-  display: flex;
 
 }
 
@@ -52,7 +53,7 @@ body {
   width: 20rem;
   background-color: black;
   padding: 2rem 3rem;
-  margin-top: 9rem;
+  top: 9rem;
   position: relative;
 }
 
@@ -94,59 +95,55 @@ li {
 
 
 .categories {
-  margin-top: 3rem;
   display: flex;
-  border: 1px solid red;
   justify-content: space-between;
+  margin-top: 3rem;
+  padding: 2rem;
 }
 
+.category {
+  width: 30%;
+  height: 15rem;
+  border: 4px solid black;
+}
 
-.categories p {
+.category p {
   text-align: center;
   background-color: black;
   padding: 0.5rem 0rem;
   width: 100%;
-  border: 1px solid red;
-  align-self: flex-end;
-  margin-top: 2rem;
-
-
+  margin-top: 11rem;
 }
 
-.cat-img {
+.cat-img img {
   display: flex;
-  height: 9rem;
-  padding: 2rem;
-  border: 4px solid black;
-  align-items: center;
   justify-content: center;
-
+  align-items: center;
+  height: 9rem;
+  padding: 2rem 0;
 }
+
+*/-- old code --/*
 
 .pen {
-  background-image: url('../images/pen.png');
-  background-repeat: no-repeat;
-  background-position: center;
   background-size: 9rem;
   width: 30%;
 }
 
 .watches {
-  background-image: url('../images/watch.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 9rem;
   width: 30%;
-  margin-top: 2rem;
 }
 
 .glasses {
-  background-image: url('../images/glasses.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 9rem;
   width: 30%;
 }
+*/ old code ends /
 
 .location-hours {
   margin-top: 3rem;
