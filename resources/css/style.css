@@ -213,7 +213,7 @@ footer {
   }
 
    .category {
-    width: 90%; */not working*/
+    width: 110%; */not working*/
   }
 
   .watches {
@@ -236,6 +236,6 @@ footer {
     padding-top: 0.5rem;
   }
 
-  .container span {
+  footer {
   text-align: center;
 }
