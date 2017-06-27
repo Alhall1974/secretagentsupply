@@ -104,46 +104,29 @@ li {
 .category {
   width: 30%;
   height: 15rem;
-  border: 4px solid black;
 }
 
 .category p {
   text-align: center;
   background-color: black;
   padding: 0.5rem 0rem;
-  width: 100%;
-  margin-top: 11rem;
+  width: 0 auto;
+  align-self: flex-end;
 }
 
 .cat-img img {
+  max-width: 8rem;
+}
+
+.cat-img {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 9rem;
-  padding: 2rem 0;
+  padding: 2rem 0rem;
+  border: 4px solid black;
 }
 
-*/-- old code --/*
-
-.pen {
-  background-size: 9rem;
-  width: 30%;
-}
-
-.watches {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 9rem;
-  width: 30%;
-}
-
-.glasses {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 9rem;
-  width: 30%;
-}
-*/ old code ends /
 
 .location-hours {
   margin-top: 3rem;
@@ -155,11 +138,8 @@ li {
 
 .bground {
   background-color: black;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 2rem;
-
-}
+  padding: 1rem 0rem 1rem 2rem;
+  }
 
 .location,
 .hours {
