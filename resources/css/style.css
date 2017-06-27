@@ -154,12 +154,11 @@ li {
 
 footer {
   background-color: black;
-  height: 5rem;
+  padding: 5rem 0rem;
+  margin-top: 4rem;
 }
 
-.copyright {
-  margin-top: 2rem;
-}
+
 
 @media only screen and (min-width: 960px) {
   .mobile-menu {
@@ -172,50 +171,71 @@ footer {
     display: none;
   }
 
-  .mobile-menu { <!-- not working properly. menu doesn't move-->
+  .mobile-menu {
     display: block;
     text-align: center;
     justify-content: space-around;
-
-
   }
 
-  .glasses,
-  .pem,
-  .watchs {
-    width: 47%; <!-- not working -->
+  .category {
+    width: 47%;  */not working*/
   }
-}
 
-@media only screen and (max-width: 580px) {
+  .glasses {
+    display: none;
+  }
 
-  .headline h4 { <!-- not working>
+  .location,
+  .hours {
+    width: 35%; */not working*/
+  }
+
+
+@media only screen and (max-width: 600px) {
+
+  .headline h4 {
     font-size: 0.77rem;
   }
 
-  .headline h1 {  <!-- not working>
+  .headline h1 {
     font-size: 1rem;
   }
 
-  .headline { <!-- not working>
+  .headline {
     padding: 1rem 2rem;
     margin-top: 10rem;
     position: relative;
   }
 
-  .mobile-menu { <!-- not working>
+  .mobile-menu {
     display: block;
     text-align: center;
   }
 
-  .glasses,
-  .watches,
-  .pen {
-    width: 90%; <!-- not working -->
+   .category {
+    width: 90%; */not working*/
   }
 
-  .copyright { <!-- not working!!! -->
-  display: block;
+  .watches {
+    display: none;
+  }
+
+  .location-hours {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .location,
+  .hours {
+    width: 90%;  */might be not working*/
+  }
+
+  .hours {
+    padding-top: 0.5rem;
+  }
+
+  .container span {
   text-align: center;
 }
-  }
